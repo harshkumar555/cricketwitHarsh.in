@@ -1,0 +1,38 @@
+/* Hide the radio buttons */
+.star-rating input {
+    display: none;
+}
+
+/* Style the stars */
+.star-rating label {
+    font-size: 50px; /* Increase the size of the stars */
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+/* When radio is selected, change the color of the stars */
+.star-rating input:checked ~ label {
+    color: gold;
+}
+
+/* Style for when the user is hovering over a star and has selected one */
+.star-rating input:checked:hover ~ label {
+    color: gold;
+}
+
+.star-rating input:checked:hover {
+    color: gold;
+}
+
+#rating-output {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
